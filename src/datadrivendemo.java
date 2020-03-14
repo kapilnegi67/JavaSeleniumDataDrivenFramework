@@ -53,7 +53,7 @@ public class datadrivendemo {
         	XSSFRow my_row = mySheet.getRow(i);
         	driver.findElement(By.id("email_id")).sendKeys(my_row.getCell(1).getStringCellValue());
  			driver.findElement(By.id("pass")).sendKeys(my_row.getCell(2).getStringCellValue());
- 			driver.findElement(By.id("signin")).click();
+ 			//driver.findElement(By.id("signin")).click();
  			Cell cell2Update = my_row.createCell(3);
  			cell2Update.setCellValue("Pass");
  			
